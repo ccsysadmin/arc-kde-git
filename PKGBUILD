@@ -50,6 +50,6 @@ pkgver() {
 }
 
 package() {
-    cd "${pkgname}"
+    cd "${srcdir}/${pkgname}"
     make DESTDIR="${pkgdir}" install
 }
